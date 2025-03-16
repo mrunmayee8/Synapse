@@ -1,0 +1,6 @@
+import torch
+
+# Load the model
+model_path = "C:\Users\Lenovo\Downloads\allergy_model.pth" 
+model = torch.load(model_path, map_location=torch.device("cpu"))  
+model.eval()  
